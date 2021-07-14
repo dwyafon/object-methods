@@ -1,0 +1,23 @@
+{
+  "name": "object-methods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwyafon/object-methods.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwyafon/object-methods/issues"
+  },
+  "homepage": "https://github.com/dwyafon/object-methods#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
