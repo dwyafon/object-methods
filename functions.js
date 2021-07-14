@@ -1,5 +1,5 @@
 const functions = {
-    objAssign: (inputObj) => Object.assign({name: 'Dale Cooper'}, inputObj)
+    objAssign: (sourceObj) => Object.assign({name: 'Dale Cooper'}, sourceObj)
 }
 
 module.exports = functions
