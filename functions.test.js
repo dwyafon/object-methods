@@ -9,6 +9,6 @@ test('returns a new object with passed source object added to target object', ()
 })
 
 // Object.create() and Object.getPrototypeOf()
-test('returns true when the input object is checked as the protoype for the created object', () => {
+test('returns true when the prototype of the object created within the function is checked as strictly equal to the passed prototype object', () => {
   expect(functions.objCreate({})).toStrictEqual(true)
 })
