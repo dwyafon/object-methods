@@ -18,7 +18,7 @@ test('receives an empty object and returns an object to which one property has b
   expect(functions.objDefineProperties({})).toStrictEqual('Dale Cooper')
 })
 
-test('receives an object and returns an object to which one property has been modifed', () => {
+test('receives an object and returns an object on which one property has been modifed', () => {
   expect(functions.objDefineProperties({name: 'Agent Cooper'})).toStrictEqual('Dale Cooper')
 })
 
