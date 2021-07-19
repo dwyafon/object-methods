@@ -27,3 +27,6 @@ test('receives an empty object and returns the same empty object despite modific
 })
 
 // Object.defineProperty()
+test('receives an object and returns the value of the modified property', () => {
+  expect(functions.objDefineProperty({ colour: 'blue'})).toEqual('orange')
+})

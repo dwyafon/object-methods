@@ -10,13 +10,18 @@ const functions = {
     })
     return modifedObj.name
   },
-  objDefineProperties2: inputObj =>
+  objDefineProperties2: inputObj => 
     Object.defineProperties(inputObj, {
       choiceOfPie: {
         value: 'Cherry',
         writable: true,
       },
     }),
+  objDefineProperty: inputObj => {
+    const newObj = Object.defineProperty(inputObj, 'colour', {
+    value: 'orange', writable: true})
+    return newObj.colour
+}
 }
 
 module.exports = functions
