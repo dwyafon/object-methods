@@ -30,3 +30,10 @@ test('receives an empty object and returns the same empty object despite modific
 test('receives an object and returns the value of the modified property', () => {
   expect(functions.objDefineProperty({ colour: 'blue'})).toEqual('orange')
 })
+
+test('receives an empty object, adds one property, and returns modified object', () => {
+  expect(functions. objDefineProperty2({})).toEqual('Hawk')
+})
+
+// Object.entries()
+

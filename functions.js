@@ -10,7 +10,7 @@ const functions = {
     })
     return modifedObj.name
   },
-  objDefineProperties2: inputObj => 
+  objDefineProperties2: inputObj =>
     Object.defineProperties(inputObj, {
       choiceOfPie: {
         value: 'Cherry',
@@ -19,9 +19,18 @@ const functions = {
     }),
   objDefineProperty: inputObj => {
     const newObj = Object.defineProperty(inputObj, 'colour', {
-    value: 'orange', writable: true})
+      value: 'orange',
+      writable: true,
+    })
     return newObj.colour
-}
+  },
+  objDefineProperty2: inputObj => {
+    const newObj = Object.defineProperty(inputObj, 'name', {
+      value: 'Hawk',
+      writable: true,
+    })
+    return newObj.name
+  },
 }
 
 module.exports = functions
