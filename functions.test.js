@@ -36,3 +36,6 @@ test('receives an empty object, adds one property, and returns value from the mo
 })
 
 // Object.entries()
+test('receives an object with properties and return an array of the object\'s string-keyed property pairs', () => {
+  expect(functions.objEntries({ name: 'Dale', agent: true})).toStrictEqual([['name', 'Dale'], ['agent', true]])
+})

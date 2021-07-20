@@ -31,6 +31,7 @@ const functions = {
     })
     return newObj.name
   },
+  objEntries: inputObj => Object.entries(inputObj)
 }
 
 module.exports = functions
