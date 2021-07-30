@@ -31,8 +31,12 @@ const functions = {
     })
     return newObj.name
   },
-  objEntries: inputObj => Object.entries(inputObj)
+  objEntries: inputObj => Object.entries(inputObj),
+  objFreeze: inputObj => {
+    Object.freeze(inputObj)
+    inputObj.DJ = 'DJ Shadow'
+    return inputObj.DJ
+  },
 }
 
 module.exports = functions
-
