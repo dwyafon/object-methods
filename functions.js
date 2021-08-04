@@ -37,6 +37,7 @@ const functions = {
     inputObj.DJ = 'DJ Shadow'
     return inputObj.DJ
   },
+  objFromEntries: list => Object.fromEntries(list)
 }
 
 module.exports = functions

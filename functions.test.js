@@ -49,3 +49,13 @@ test("receives an object with properties and returns an array of the object's st
 test("freezes an object, attempts to mutate the object, and returns the object's single value", () => {
   expect(functions.objFreeze({ DJ: "Cut Chemist" })).toMatch(/Cut Chemist/)
 })
+
+// Object.fromEntries()
+test("receives a list of two key-value pairs and returns an object with the two properties based on the list entries ", () => {
+  expect(
+    functions.objFromEntries([
+      ["sound1", "wind"],
+      ["sound2", "leaves falling"],
+    ])
+  ).toStrictEqual({ sound1: "wind", sound2: "leaves falling" })
+})
