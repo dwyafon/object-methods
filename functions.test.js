@@ -51,11 +51,23 @@ test("freezes an object, attempts to mutate the object, and returns the object's
 })
 
 // Object.fromEntries()
-test("receives a list of two key-value pairs and returns an object with the two properties based on the list entries ", () => {
+test("receives a list of two key-value pairs and returns an object with the two properties based on the list entries", () => {
   expect(
     functions.objFromEntries([
       ["sound1", "wind"],
       ["sound2", "leaves falling"],
     ])
   ).toStrictEqual({ sound1: "wind", sound2: "leaves falling" })
+})
+
+// Object.getOwnPropertyDescriptor()
+test("receives an object and a property key and returns the value for .configurable and for .value", () => {
+  expect(
+    functions.objGetOwnPropertyDescriptor(
+      { day: "Saturday", adventure: true },
+      "day"
+    )
+  ).toMatch(
+    /The value for the day key is Saturday, and its configurable value is true/
+  )
 })
