@@ -71,3 +71,17 @@ test("receives an object and a property key and returns the value for .configura
     /The value for the day key is Saturday, and its configurable value is true/
   )
 })
+
+// Object.getOwnPropertyDescriptors
+test("receives an object with more than one property and returns a string confirming the property value and writable value for one property on the object", () => {
+  expect(
+    functions.objGetOwnPropertyDescriptors({
+      needSleep: false,
+      needNap: true,
+    })
+  ).toMatch(
+    /The value of the property needNap is true, and yes it is indeed writable/
+  )
+})
+
+//Object.getOwnPropertyNames

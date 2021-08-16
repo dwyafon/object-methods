@@ -42,6 +42,11 @@ const functions = {
     const descriptor = Object.getOwnPropertyDescriptor(inputObj, prop)
     return `The value for the ${prop} key is ${descriptor.value}, and its configurable value is ${descriptor.configurable}`
   },
+  objGetOwnPropertyDescriptors: inputObj => {
+    const descriptors = Object.getOwnPropertyDescriptors(inputObj)
+    return `The value of the property needNap is ${descriptors.needNap.value}, and ${descriptors.needNap.writable ? 'yes' : 'no' } it is ${descriptors.needNap.writable ? 'indeed' : 'not'} writable`
+
+  },
 }
 
 module.exports = functions
